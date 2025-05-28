@@ -1,0 +1,5 @@
+# ignore cabal build artifacts
+dist-newstyle/
+
+# ignore dir-env nix artifacts
+.direnv/
