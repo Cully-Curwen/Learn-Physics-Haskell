@@ -20,6 +20,7 @@ library
     exposed-modules:  Chapter2.First
                     , Chapter2.Exercises
                     , Chapter3.Exercises
+                    , Chapter4.Exercises
     -- other-modules:
     -- other-extensions:
     build-depends:    base ^>=4.19.2.0
