@@ -23,9 +23,11 @@ library
                     , Chapter4.Exercises
                     , Chapter5.Exercises
                     , Chapter6.Exercises
+                    , Chapter7.Exercises
     -- other-modules:
     -- other-extensions:
     build-depends:    base ^>=4.19.2.0
+                    , gnuplot >=0.5.7
     hs-source-dirs:   src
     default-language: Haskell2010
 

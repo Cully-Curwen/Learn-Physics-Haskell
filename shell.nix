@@ -11,5 +11,7 @@ pkgs.mkShell {
     haskellPackages.cabal-install
     haskellPackages.haskell-language-server
     haskellPackages.hoogle   # Documentation lookup
+
+    gnuplot
   ];
 }
