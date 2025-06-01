@@ -25,6 +25,7 @@ library
                     , Chapter6.Exercises
                     , Chapter7.Exercises
                     , Chapter8.Exercises
+                    , Chapter9.Exercises
     -- other-modules:
     -- other-extensions:
     build-depends:    base ^>=4.19.2.0
