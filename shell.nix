@@ -4,14 +4,17 @@ let
   # Specify GHC version
   haskellPackages = pkgs.haskellPackages;
 in
-pkgs.mkShell {
-  buildInputs = with pkgs; [
-    # Core Haskell tools
-    haskellPackages.ghc
-    haskellPackages.cabal-install
-    haskellPackages.haskell-language-server
-    haskellPackages.hoogle   # Documentation lookup
+haskellPackages.shellFor {
+  packages = p: [ (p.callCabal2nix "Learn-Physics-Haskell" ./. {}) ];
 
+  withHoogle = true;
+
+  nativeBuildInputs = with haskellPackages; [
+    cabal-install
+    haskell-language-server
+  ];
+
+  buildInputs = with pkgs; [
     gnuplot
   ];
 }
