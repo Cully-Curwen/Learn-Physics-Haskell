@@ -26,10 +26,12 @@ library
                     , Chapter7.Exercises
                     , Chapter8.Exercises
                     , Chapter9.Exercises
+                    , Chapter10.Exercises
     -- other-modules:
     -- other-extensions:
     build-depends:    base ^>=4.19.2.0
-                    , gnuplot >=0.5.7
+                    , gnuplot ^>=0.5.7
+                    , LPFP-core ^>= 1.1.5
     hs-source-dirs:   src
     default-language: Haskell2010
 
