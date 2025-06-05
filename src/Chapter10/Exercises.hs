@@ -6,6 +6,8 @@ import LPFPCore.SimpleVec hiding
   , gEarth
   , vBall
   , speedRateChangeBall
+  , rNCM
+  , aPerpFromPosition
   )
 import Graphics.Gnuplot.Simple (plotFunc)
 
@@ -110,4 +112,27 @@ checkMagAcc :: [R]
 checkMagAcc = [magnitude $ aPerp (vUCM t) (aUCM t) | t <- [1..10]]
 
 -- 10.11
+rNCM :: (R, R -> R) -> R -> Vec
+rNCM (radius, theta) t = radius *^ (cos (theta t) *^ iHat ^+^ sin (theta t) *^ jHat)
 
+aPerpFromPosition :: R -> (R -> Vec) -> R -> Vec
+aPerpFromPosition epsilon r t =
+  let v = vecDerivative epsilon r
+      a = vecDerivative epsilon v
+  in aPerp (v t) (a t)
+
+theta :: R -> R
+theta t = 1/2 * 3 * t**2
+
+rcaAt2 = aPerpFromPosition 0.1 (rNCM (2, theta)) 2
+-- vec (-67.1731324820875) 19.274862779279502 0.0
+
+speedAt2 = magnitude $ vecDerivative 0.1 (rNCM (2, theta)) 2
+-- 11.820808266453575
+
+magnitudeRcaAt2 = magnitude rcaAt2
+-- 69.8838326268396
+
+speed2divR = speedAt2 ** 2 / 2
+-- 69.86575403612859
+-- So magnitudeRcaAt2 ~= speed2divR
