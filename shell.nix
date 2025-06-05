@@ -13,8 +13,4 @@ haskellPackages.shellFor {
     cabal-install
     haskell-language-server
   ];
-
-  buildInputs = with pkgs; [
-    gnuplot
-  ];
 }

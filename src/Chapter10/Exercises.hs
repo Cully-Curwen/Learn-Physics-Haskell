@@ -124,15 +124,19 @@ aPerpFromPosition epsilon r t =
 theta :: R -> R
 theta t = 1/2 * 3 * t**2
 
+rcaAt2 :: Vec
 rcaAt2 = aPerpFromPosition 0.1 (rNCM (2, theta)) 2
 -- vec (-67.1731324820875) 19.274862779279502 0.0
 
+speedAt2 :: R
 speedAt2 = magnitude $ vecDerivative 0.1 (rNCM (2, theta)) 2
 -- 11.820808266453575
 
+magnitudeRcaAt2 :: R
 magnitudeRcaAt2 = magnitude rcaAt2
 -- 69.8838326268396
 
+speed2divR :: R
 speed2divR = speedAt2 ** 2 / 2
 -- 69.86575403612859
 -- So magnitudeRcaAt2 ~= speed2divR
