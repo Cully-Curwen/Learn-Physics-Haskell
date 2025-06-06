@@ -1,2 +1,4 @@
 packages: .
           src/Chapter13/
+
+multi-repl: True

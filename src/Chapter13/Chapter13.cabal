@@ -119,7 +119,7 @@ executable VisSimulate
     hs-source-dirs:   .
     default-language: Haskell2010
 
-executable Exercise1
+executable Exercise13-1
     import:           warnings
     main-is:          Exercise1.hs
     -- other-modules:
@@ -129,3 +129,95 @@ executable Exercise1
     hs-source-dirs:   .
     default-language: Haskell2010
 
+executable Exercise13-2
+    import:           warnings
+    main-is:          Exercise2.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , gloss
+    hs-source-dirs:   .
+    default-language: Haskell2010
+
+executable Exercise13-3
+    import:           warnings
+    main-is:          Exercise3.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , gloss
+    hs-source-dirs:   .
+    default-language: Haskell2010
+
+executable Exercise13-4
+    import:           warnings
+    main-is:          Exercise4.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , gloss
+    hs-source-dirs:   .
+    default-language: Haskell2010
+
+executable Exercise13-5
+    import:           warnings
+    main-is:          Exercise5.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , gloss
+    hs-source-dirs:   .
+    default-language: Haskell2010
+
+executable Exercise13-6
+    import:           warnings
+    main-is:          Exercise6.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , gloss
+    hs-source-dirs:   .
+    default-language: Haskell2010
+
+executable Exercise13-7
+    import:           warnings
+    main-is:          Exercise7.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , gloss
+    hs-source-dirs:   .
+    default-language: Haskell2010
+
+executable Exercise13-8
+    import:           warnings
+    main-is:          Exercise8.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , not-gloss
+                    , linear
+                    , spatial-math
+    hs-source-dirs:   .
+    default-language: Haskell2010
+
+executable Exercise13-9
+    import:           warnings
+    main-is:          Exercise9.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , not-gloss
+                    , spatial-math
+    hs-source-dirs:   .
+    default-language: Haskell2010
+
+executable Exercise13-10
+    import:           warnings
+    main-is:          Exercise10.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , not-gloss
+    hs-source-dirs:   .
+    default-language: Haskell2010
