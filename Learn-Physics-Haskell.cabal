@@ -57,6 +57,109 @@ executable Chapter13-GlossDisplay
     build-depends:    base ^>=4.19.2.0
                     , Learn-Physics-Haskell
                     , gloss
-
     hs-source-dirs:   src
     default-language: Haskell2010
+
+executable Chapter13-GlossDisplay2
+    import:           warnings
+    main-is:          Chapter13/GlossDisplay2.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , Learn-Physics-Haskell
+                    , gloss
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable Chapter13-GlossAnimate
+    import:           warnings
+    main-is:          Chapter13/GlossAnimate.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , Learn-Physics-Haskell
+                    , gloss
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable Chapter13-GlossSimulate
+    import:           warnings
+    main-is:          Chapter13/GlossSimulate.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , Learn-Physics-Haskell
+                    , gloss
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable Chapter13-GlossSimulate2
+    import:           warnings
+    main-is:          Chapter13/GlossSimulate2.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , Learn-Physics-Haskell
+                    , gloss
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable Chapter13-VisDisplay
+    import:           warnings
+    main-is:          Chapter13/VisDisplay.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , Learn-Physics-Haskell
+                    , not-gloss
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable Chapter13-VisDisplay2
+    import:           warnings
+    main-is:          Chapter13/VisDisplay2.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , Learn-Physics-Haskell
+                    , not-gloss
+                    , linear
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable Chapter13-VisDisplay3
+    import:           warnings
+    main-is:          Chapter13/VisDisplay3.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , Learn-Physics-Haskell
+                    , not-gloss
+                    , linear
+                    , spatial-math
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable Chapter13-VisAnimate
+    import:           warnings
+    main-is:          Chapter13/VisAnimate.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , Learn-Physics-Haskell
+                    , not-gloss
+                    , spatial-math
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable Chapter13-VisSimulate
+    import:           warnings
+    main-is:          Chapter13/VisSimulate.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.2.0
+                    , Learn-Physics-Haskell
+                    , not-gloss
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
